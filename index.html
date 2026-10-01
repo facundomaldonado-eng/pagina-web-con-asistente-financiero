@@ -1,0 +1,173 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyBot - Asistente Inteligente</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+            <div>
+                <h1>StudyBot</h1>
+                <span>Asistente inteligente</span>
+            </div>
+        </div>
+
+        <button id="darkModeBtn" class="dark-button">
+            🌙
+        </button>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- PRESENTACIÓN -->
+        <section class="welcome">
+            <div class="welcome-text">
+                <span class="tag">ASISTENTE EDUCATIVO</span>
+
+                <h2>
+                    Aprendé de forma
+                    <span>más inteligente.</span>
+                </h2>
+
+                <p>
+                    Hacé preguntas sobre tus materias y obtené
+                    explicaciones claras y sencillas con la ayuda
+                    de StudyBot.
+                </p>
+            </div>
+
+            <div class="robot">
+                🤖
+            </div>
+        </section>
+
+
+        <!-- ÁREA DEL ASISTENTE -->
+        <section class="assistant-card">
+
+            <div class="card-title">
+                <div>
+                    <h3>💬 Preguntale a StudyBot</h3>
+                    <p>Seleccioná una materia y escribí tu pregunta.</p>
+                </div>
+
+                <span class="online">
+                    ● En línea
+                </span>
+            </div>
+
+
+            <!-- SELECCIÓN DE MATERIA -->
+            <label for="subject">Materia</label>
+
+            <select id="subject">
+                <option value="">Seleccioná una materia</option>
+                <option value="Matemática">📐 Matemática</option>
+                <option value="Biología">🧬 Biología</option>
+                <option value="Historia">📚 Historia</option>
+                <option value="Lengua">✍️ Lengua</option>
+                <option value="Tecnología">💻 Tecnología</option>
+                <option value="Geografía">🌎 Geografía</option>
+            </select>
+
+
+            <!-- PREGUNTA -->
+            <label for="question">Tu pregunta</label>
+
+            <div class="question-box">
+                <textarea
+                    id="question"
+                    placeholder="Ejemplo: ¿Qué función cumple el corazón?"
+                    maxlength="500">
+                </textarea>
+
+                <span id="counter">0 / 500</span>
+            </div>
+
+
+            <!-- BOTONES -->
+            <div class="buttons">
+
+                <button id="askBtn" class="ask-button">
+                    🤖 Preguntar
+                </button>
+
+                <button id="summaryBtn" class="summary-button">
+                    📝 Resumir
+                </button>
+
+            </div>
+
+
+            <!-- RESPUESTA -->
+            <div id="answerContainer" class="answer-container">
+
+                <div class="answer-header">
+                    <span>🤖</span>
+                    <strong>Respuesta de StudyBot</strong>
+                </div>
+
+                <div id="answer" class="answer">
+                    <p>
+                        ¡Hola! 👋 Soy StudyBot.
+                        Seleccioná una materia y escribime una pregunta
+                        para comenzar.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORIAL -->
+        <section class="history-card">
+
+            <div class="history-title">
+                <div>
+                    <h3>🕘 Historial</h3>
+                    <p>Tus preguntas de esta sesión.</p>
+                </div>
+
+                <button id="clearBtn" class="clear-button">
+                    🗑️ Limpiar
+                </button>
+            </div>
+
+            <div id="history" class="history">
+
+                <div class="empty-history">
+                    <span>📖</span>
+                    <p>Todavía no realizaste ninguna pregunta.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 StudyBot | Proyecto educativo</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
